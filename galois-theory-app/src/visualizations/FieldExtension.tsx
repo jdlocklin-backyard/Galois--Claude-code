@@ -68,7 +68,7 @@ export function FieldExtensionVisualization() {
                     d={`M 250 ${y + 45} L 250 ${y + 55}`}
                     stroke={fields[i - 1].color}
                     strokeWidth="2"
-                    markerEnd="url(#arrowhead)"
+                    markerEnd="url(#field-ext-arrowhead)"
                     initial={{ pathLength: 0 }}
                     animate={{ pathLength: 1 }}
                     transition={{ delay: i * 0.15 + 0.1 }}
@@ -81,7 +81,7 @@ export function FieldExtensionVisualization() {
           {/* Arrow marker */}
           <defs>
             <marker
-              id="arrowhead"
+              id="field-ext-arrowhead"
               markerWidth="10"
               markerHeight="7"
               refX="9"

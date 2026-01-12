@@ -55,11 +55,11 @@ export function PolynomialRootsVisualization() {
         <svg viewBox="0 0 400 300" width="400" height="300">
           {/* Grid */}
           <defs>
-            <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+            <pattern id="poly-roots-grid" width="25" height="25" patternUnits="userSpaceOnUse">
               <path d="M 25 0 L 0 0 0 25" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="1"/>
             </pattern>
           </defs>
-          <rect width="400" height="300" fill="url(#grid)" />
+          <rect width="400" height="300" fill="url(#poly-roots-grid)" />
 
           {/* Axes */}
           <line x1="0" y1={centerY} x2="400" y2={centerY} stroke="rgba(255,255,255,0.2)" strokeWidth="1" />

@@ -132,12 +132,12 @@ export function GaloisCorrespondenceVisualization() {
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <svg width="60" height="40">
             <defs>
-              <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+              <marker id="galois-arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
                 <polygon points="0 0, 10 3.5, 0 7" fill="#fbbf24" />
               </marker>
             </defs>
-            <line x1="5" y1="20" x2="50" y2="20" stroke="#fbbf24" strokeWidth="2" markerEnd="url(#arrow)" />
-            <line x1="55" y1="20" x2="10" y2="20" stroke="#6366f1" strokeWidth="2" markerEnd="url(#arrow)" transform="translate(0, 8)" />
+            <line x1="5" y1="20" x2="50" y2="20" stroke="#fbbf24" strokeWidth="2" markerEnd="url(#galois-arrow)" />
+            <line x1="55" y1="20" x2="10" y2="20" stroke="#6366f1" strokeWidth="2" markerEnd="url(#galois-arrow)" transform="translate(0, 8)" />
           </svg>
         </div>
 

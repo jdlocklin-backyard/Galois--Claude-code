@@ -37,8 +37,9 @@ export function Quiz({ questions, onComplete }: QuizProps) {
       setSelectedAnswer(null);
       setIsAnswered(false);
     } else {
+      // Score is already updated by handleSubmit, no need to add again
       setIsComplete(true);
-      onComplete(Math.round(((score + (isCorrect ? 1 : 0)) / questions.length) * 100));
+      onComplete(Math.round((score / questions.length) * 100));
     }
   };
 

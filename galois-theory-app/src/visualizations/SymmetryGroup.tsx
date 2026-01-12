@@ -98,14 +98,15 @@ export function SymmetryGroupVisualization() {
           })}
 
           {/* The shape */}
-          <motion.g
-            animate={{
-              rotate: rotation,
-              scaleX: isReflected ? -1 : 1,
-            }}
-            transition={{ type: 'spring', stiffness: 100, damping: 15 }}
-            style={{ originX: '200px', originY: '150px', transformOrigin: '200px 150px' }}
-          >
+          <g style={{ transformOrigin: '200px 150px' }}>
+            <motion.g
+              animate={{
+                rotate: rotation,
+                scaleX: isReflected ? -1 : 1,
+              }}
+              transition={{ type: 'spring', stiffness: 100, damping: 15 }}
+              style={{ transformOrigin: '200px 150px', transformBox: 'fill-box' }}
+            >
             <polygon
               points={pointsString}
               fill={`${config.color}20`}
@@ -129,7 +130,8 @@ export function SymmetryGroupVisualization() {
                 </text>
               </g>
             ))}
-          </motion.g>
+            </motion.g>
+          </g>
 
           {/* Labels */}
           <text x="200" y="270" fill="rgba(255,255,255,0.7)" fontSize="13" textAnchor="middle">

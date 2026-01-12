@@ -174,7 +174,7 @@ export function SolvabilityVisualization() {
             <text x="250" y="90" fill="#fff" fontSize="13" textAnchor="middle">
               Example: {info.example}
             </text>
-            <text x="250" y="115" fill="var(--color-gold-400)" fontSize="12" textAnchor="middle">
+            <text x="250" y="115" fill="#fbbf24" fontSize="12" textAnchor="middle">
               Galois Group: {info.galoisGroup}
             </text>
             <text x="250" y="140" fill="rgba(255,255,255,0.7)" fontSize="11" textAnchor="middle">
